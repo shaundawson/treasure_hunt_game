@@ -72,7 +72,7 @@
 
 
 
-# LEAP YEAR CHECKER EXERCISE
+# ** LEAP YEAR CHECKER EXERCISE
 # Write a program that works out whether if a given year is a leap year.
 # year = int(input("Which year do you want to check? "))
 
@@ -166,28 +166,50 @@
 
 
 # LOGICAL OPERATORS (AND, OR, NOT)
-print("Welcome to the rollercoaster!")
-height = int(input("What is your height in cm? "))
-bill = 0
+# print("Welcome to the rollercoaster!")
+# height = int(input("What is your height in cm? "))
+# bill = 0
 
-if height >= 120: 
-  print("You can ride the rollercoaster!")
-  age = int(input("What is your age?"))
-  if age < 12:
-     bill = 5 
-     print("Child tickets are $5.")
-  elif age <= 18:
-    bill = 7
-    print("Youth tickets are $7.")
-  elif age >= 45 and age <= 55:
-    print("Everything is going to be ok. Have a free ride on us!")
-  else:
-    bill = 12
-    print("Adult tickets are $12.")
+# if height >= 120: 
+#   print("You can ride the rollercoaster!")
+#   age = int(input("What is your age?"))
+#   if age < 12:
+#      bill = 5 
+#      print("Child tickets are $5.")
+#   elif age <= 18:
+#     bill = 7
+#     print("Youth tickets are $7.")
+#   elif age >= 45 and age <= 55:
+#     print("Everything is going to be ok. Have a free ride on us!")
+#   else:
+#     bill = 12
+#     print("Adult tickets are $12.")
 
-  wants_photo = input("Do you want a photo taken? Y or N.")
-  if wants_photo == "Y":
-    bill += 3
-  print(f"Your final bill is ${bill}")
+#   wants_photo = input("Do you want a photo taken? Y or N.")
+#   if wants_photo == "Y":
+#     bill += 3
+#   print(f"Your final bill is ${bill}")
+# else:
+#   print("Sorry, you have to grow taller before you can ride")
+
+# ** LOVE CALCULATOR EXERCISE
+#  Write a program that tests the compatibility between two people.
+print("Welcome to the Love Calculator!")
+name1 = input("What is your name? \n")
+name2 = input("What is their name? \n")
+
+# Combine the names
+name3 = (name1 + name2).lower()
+# Find Number of times the letters in the word TRUE occurs
+count_true = name3.count("t") + name3.count("r") + name3.count("u") + name3.count("e")
+# Check for the number of times the letters in the word LOVE occurs
+count_love = name3.count("l") + name3.count("o") + name3.count("v") + name3.count("e")
+# Combine those numbers to make a 2 digit number
+score = int(str(count_true) + str(count_love))
+
+if score <= 10 or score >= 90:
+  print(f"Your score is {score}, you go together like coke and mentos.")
+elif score >= 40 and score <= 50:
+  print(f"Your score is {score}, you are alright together.")
 else:
-  print("Sorry, you have to grow taller before you can ride")
+  print(f"Your score is {score}.")
