@@ -48,18 +48,29 @@
 
 # BMI Calculator
 # Write a program that interprets the Body Mass Index (BMI) based on a user's weight and height.
-height = float(input("enter your height in m: "))
-weight = float(input("enter your weight in kg: "))
+# height = float(input("enter your height in m: "))
+# weight = float(input("enter your weight in kg: "))
 
-bmi = round(weight/(height **2))
+# bmi = round(weight/(height **2))
 
-if bmi < 18.5:
-  print(f"Your BMI is {bmi}, you are underweight.")
-elif bmi < 25:
-  print(f"Your BMI is {bmi}, you have a normal weight.")
-elif bmi < 30:
-  print (f"Your BMI is {bmi}, you are slightly overweight.")
-elif bmi < 35:
-  print(f" Your BMI is {bmi}, you are obese.")
+# if bmi < 18.5:
+#   print(f"Your BMI is {bmi}, you are underweight.")
+# elif bmi < 25:
+#   print(f"Your BMI is {bmi}, you have a normal weight.")
+# elif bmi < 30:
+#   print (f"Your BMI is {bmi}, you are slightly overweight.")
+# elif bmi < 35:
+#   print(f" Your BMI is {bmi}, you are obese.")
+# else:
+#   print(f"Your BMI is {bmi}, you are clinically obese.")
+
+# Leap Year Checker
+# Write a program that works out whether if a given year is a leap year.
+year = int(input("Which year do you want to check? "))
+
+if year % 4 == 0 and year % 100 != 0:
+  print("Leap year")
+elif year % 100 == 0 and year % 400 == 0:
+  print("Leap year")
 else:
-  print(f"Your BMI is {bmi}, you are clinically obese.")
+  print("Not Leap Year")
